@@ -4,7 +4,8 @@
   "description": "A url shortner built with node js, express and mongodb",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm start"
   },
   "author": "Precious Akams",
   "license": "ISC",
