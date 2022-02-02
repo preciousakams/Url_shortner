@@ -26,13 +26,18 @@ app.get('/', async (req,res)=> {
 
 app.post('/shortUrls', async (req, res) => {
     try {
-        
-    await ShortUrl.create({full: req.body.fullUrl})
-   res.redirect('/')
+        let url = await ShortUrl.findOne ({full: req.body.fullUrl })
+        if(url) {
+            res.send('Url already exists')
+        }
+        else {
+        await ShortUrl.create({full: req.body.fullUrl})
+        res.redirect('/')
+        }
     }
-    catch (err) {
-        console.log(err);
-      }
+        catch (err) {
+            console.log(err);
+            }
 
 })
 app.get('/:shortUrl', async (req, res) => {
