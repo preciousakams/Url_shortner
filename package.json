@@ -6,7 +6,7 @@
   
   "scripts": {
     "test": "jest",
-    "start": "npm start"
+    "start": "node app.js"
   },
   "author": "Precious Akams",
   "license": "ISC",
