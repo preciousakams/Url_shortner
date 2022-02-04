@@ -1,6 +1,8 @@
-This is a Url Shortner built with Node js, express and mongodb by Precious Akams
+demo app:https://kamzzy-url-shortner.herokuapp.com/
 
-To reun this on your local server
+A url shortner built with Node js 
 
-Run npm install 
-node app.js
+setup:
+clone the project
+install dependencies: npm install
+ node app
