@@ -1,6 +1,6 @@
  # Url-Shortner
  ***
-A tool that creates a short and compact version of any url, built with Node Js.
+A tool that creates a short and compact version of any web URL, built with Node Js.
 
 ## Built with
 * Html
