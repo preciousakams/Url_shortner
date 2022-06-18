@@ -4,13 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <title>Shorten Urls</title>
 </head>
 <body>
+    <style>
+        .container {
+            background-color: white;
+        }
+        nav, .nav-link {
+            background-color: powderblue;
+            width: 100%;
+            color: blue;
+            font-weight: bold;
+            font-size: large;
+        }
+        .btn {
+            color: blue;
+            background-color: powderblue;
+            font-weight: bold;
+            font-size: large;
+            border-radius: 10px;
+        }
+       .form-inline ::placeholder {
+        color: blue;
+       }
+       .form-inline input {
+        border: solid 3px blue;
+        border-radius: 10px;
+       }
+       table tr:nth-child(even) {
+        background-color:powderblue;
+       }
+       th {
+        color: blue;
+        background-color: powderblue;
+       }
+    
+    </style>
     <div class="container">
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar">
             <span class="navbar-brand mb-0 h1">Shorten Urls</span>
             <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -18,16 +51,15 @@
                 </li></ul>
           </nav>
     <form action="/shortUrls" method="POST" class="my-4 form-inline">
-        <label for="fullUrl" class="sr-only">Url to be shortened </label>
-        <input type="url" required name="fullUrl" placeholder="Input Url" id="fullUrl" class="form-control col mr-2">
-        <button type="submit" class="btn btn-primary">Shorten Url</button>
+        <input type="url" required name="fullUrl" placeholder="Input Url: (https://example.com)" id="fullUrl" class="form-control col mr-2">
+        <button type="submit" class="btn">Shorten Url</button>
     </form>
     
-    <table class="table table-striped table-responsive">
+    <table class="table  table-responsive">
         <thead>
             <tr>
-                <th>Short Url</th>
-                <th>Full Url </th>
+                <th class="trow">Shortened Url Link</th>
+                <th>Long Url Link </th>
                 
                
             </tr>
